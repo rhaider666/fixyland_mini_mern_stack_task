@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #1f8f6a;         /* custom primary */
+}
+
+body{
+  background-color: #e9f0ec;
+}
+
+/* In a separate CSS file or a style block */
+.bg-yellow-400.ant-btn-primary {
+  background-color: #facc15 !important;
+  border-color: #facc15 !important; /* AntD also uses border-color for primary */
+}
+
+.bg-yellow-400.ant-btn-primary:hover {
+  background-color: #eab308 !important; /* Tailwind's yellow-500 */
+  border-color: #eab308 !important;
+}
+
+.bg-custom.ant-btn-primary {
+  background-color: #1f8f6a !important;
+  border-color: #1f8f6a !important; /* AntD also uses border-color for primary */
+}
+
+.bg-custom.ant-btn-primary:hover {
+  background-color: #1f8f6a !important; /* Tailwind's yellow-500 */
+  border-color: #1f8f6a !important;
+}
+
+/* Hide scrollbar but keep scrolling */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari */
+}
