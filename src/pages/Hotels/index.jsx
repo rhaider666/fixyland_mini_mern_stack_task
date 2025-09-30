@@ -65,8 +65,6 @@ const Hotels = () => {
       }else{
         message.error(res.message)
       }
-
-      // clears form after submit
     },
   });
   return (
